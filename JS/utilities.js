@@ -13,4 +13,16 @@ function buttonColor(id){
     
     document.getElementById(id).classList.remove('bg-white')
     document.getElementById(id).classList.remove('bg-white')
+};
+
+function inputId(id){
+    const donation = document.getElementById(id).value
+    const donationNum = parseFloat(donation)
+    return donationNum;
+}
+
+function balanceId(id){
+    const donation = document.getElementById(id).innerText
+    const donationNum = parseFloat(donation)
+    return donationNum;
 }
