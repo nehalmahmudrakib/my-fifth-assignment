@@ -41,7 +41,7 @@ document.getElementById('btn-donate-nowakhali').addEventListener('click', functi
         div.innerHTML = `
             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
                 <p class="text-3xl">${inputField} Taka is Donated for Flood at Noakhali, Bangladesh</p>
-                <p class=" p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
+                <p class="bg-slate-100 p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
             </div> 
         `
 
@@ -77,7 +77,7 @@ document.getElementById('relief-btn-donation').addEventListener('click', functio
          div.innerHTML = `
              <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
                 <p class="text-3xl">${inputField} Taka is Donated for Flood Relief in Feni Bangladesh</p>
-                <p class=" p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
+                <p class="bg-slate-100 p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
             </div>  
          `
  
@@ -114,7 +114,7 @@ document.getElementById('quota-donation-btn').addEventListener('click', function
          div.innerHTML = `
              <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
                 <p class="text-3xl">${inputField} Taka is Donated for Aid for Injured in the Quota Movement</p>
-                <p class=" p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
+                <p class="bg-slate-100 p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
             </div>  
          `
  
