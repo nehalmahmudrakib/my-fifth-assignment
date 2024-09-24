@@ -32,11 +32,14 @@ document.getElementById('btn-donate-nowakhali').addEventListener('click', functi
         document.getElementById('donation-balance').innerText = nowakhaliDonation
         document.getElementById('account-balance').innerText = totalBalance
 
+        //  Modal
+        document.getElementById('my_modal_5').showModal()
+
         // Transaction History
         const div = document.createElement('div')
         div.classList.add('rounded-3xl')
         div.innerHTML = `
-            <div class="p-10 border-2 mt-5 rounded-2xl font-semibold">
+            <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
                 <p class="text-3xl">${inputField} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
                 <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
             </div>
@@ -66,11 +69,14 @@ document.getElementById('relief-btn-donation').addEventListener('click', functio
         document.getElementById('donation-balance-2').innerText = ReliefDonation
         document.getElementById('account-balance').innerText = totalBalance
 
+        //  Modal
+        document.getElementById('my_modal_5').showModal()
+
          // Transaction History
          const div = document.createElement('div')
          div.classList.add('rounded-3xl')
          div.innerHTML = `
-             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold">
+             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
                  <p class="text-3xl">${inputField} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
                  <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
              </div>
@@ -101,18 +107,23 @@ document.getElementById('quota-donation-btn').addEventListener('click', function
         document.getElementById('donation-balance-3').innerText = quotaDonation
         document.getElementById('account-balance').innerText = totalBalance
 
+        //  Modal
+        document.getElementById('my_modal_5').showModal()
+
          // Transaction History
          const div = document.createElement('div')
          div.classList.add('rounded-3xl')
          div.innerHTML = `
-             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold">
-                 <p class="text-3xl">${inputField} Taka is Donated for Aid for Injured in the Quota Movement</p>
+             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
+                 <p class="lg:text-3xl text-sm">${inputField} Taka is Donated for Aid for Injured in the Quota Movement</p>
                  <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
              </div>
              
          `
  
          document.getElementById('transaction-container').appendChild(div)
+
+        
     }
     else{
         alert('Wrong Amount')

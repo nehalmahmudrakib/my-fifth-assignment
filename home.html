@@ -12,17 +12,19 @@
    <header>
     <!-- Navbar Start -->
     <nav class="flex justify-between mt-10 items-center">
-        <button id="btn-blog" class="btn btn-success px-8 font-bold text-xl">Blog</button>
-        <div class="flex items-center gap-4">
-            <img src="assets/logo.png" alt="">
-            <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
-        </div>
-        <div class="flex items-center">
-            <img src="assets/coin.png" alt="">
-            <div class="stat">
-                <div id="account-balance" class="stat-value">4200</div>
-              </div>
-        </div>
+      <button id="btn-blog" class=" rounded-lg lg:p-2 px-2 py-2 bg-[#B4F461] lg:px-8 font-bold lg:text-xl">Blog</button>
+      <div class="flex items-center lg:gap-4 gap-1">
+          <img class=" w-8" src="assets/logo.png" alt="">
+          <h1 class="lg:text-4xl text-lg font-bold ">Donate Bangladesh</h1>
+      </div>
+
+        <div class="flex items-center gap-2">
+          <img src="assets/coin.png" alt="">
+              <p id="account-balance" class="lg:text-3xl text-sm
+              font-extrabold">4200</p>
+              <p class="lg:text-3xl text-sm font-extrabold">BDT</p>
+
+      </div>
     </nav>
     <!-- Navbar End -->
    </header>
@@ -30,34 +32,34 @@
     
     <!-- Question Section -->
      
-     <div class="mt-32">
-        <h1 class="font-extrabold text-6xl mb-16">Important FAQ</h1>
+     <div class="lg:mt-32 mt-16">
+        <h1 class="font-extrabold lg:text-6xl text-4xl mb-16">Important FAQ</h1>
         <div class="join join-vertical w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title text-3xl p-10 font-bold">What is the Document Object Model (Dom)?</div>
+              <div class="collapse-title lg:text-3xl text-xl p-10 font-bold">What is the Document Object Model (Dom)?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="pl-10 lg:text-xl  font-semibold pr-10">The Document Object Model (DOM) is a programming interface that represents a webpage as a structured tree of objects, allowing for dynamic manipulation of its content and structure using JavaScript.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-3xl p-10 font-bold">How do you select an element from the DOM?</div>
+              <div class="collapse-title lg:text-3xl text-xl p-10 font-bold">How do you select an element from the DOM?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="pl-10 lg:text-xl font-semibold pr-10">You can select an element from the DOM using `document.querySelector('selector')` or `document.getElementById('id')`.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-3xl  p-10 font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-title lg:text-3xl text-xl p-10 font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="pl-10 lg:text-xl font-semibold pr-10">Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events for multiple child elements, improving performance and simplifying event management.</p>
               </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-3xl  p-10 font-bold">how do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-title lg:text-3xl text-xl p-10 font-bold">how do you manipulate an element's attributes and styles using the DOM?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="pl-10 lg:text-xl font-semibold pr-10">You can manipulate an element's attributes using `element.setAttribute('attribute', 'value')` and its styles using `element.style.propertyName = 'value'`.</p>
               </div>
             </div>
           </div>
