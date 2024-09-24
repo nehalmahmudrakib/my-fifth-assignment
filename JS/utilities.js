@@ -16,12 +16,12 @@ function buttonColor(id){
 
 function inputId(id){
     const donation = document.getElementById(id).value
-    const donationNum = parseFloat(donation)
-    return donationNum;
+    const donationNumber = parseFloat(donation)
+    return donationNumber;
 }
 
 function balanceId(id){
     const donation = document.getElementById(id).innerText
-    const donationNum = parseFloat(donation)
-    return donationNum;
+    const donationNumber = parseFloat(donation)
+    return donationNumber;
 }

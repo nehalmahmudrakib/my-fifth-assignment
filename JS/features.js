@@ -40,16 +40,15 @@ document.getElementById('btn-donate-nowakhali').addEventListener('click', functi
         div.classList.add('rounded-3xl')
         div.innerHTML = `
             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
-                <p class="text-3xl">${inputField} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
-                <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
-            </div>
-            
+                <p class="text-3xl">${inputField} Taka is Donated for Flood at Noakhali, Bangladesh</p>
+                <p class=" p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
+            </div> 
         `
 
         document.getElementById('transaction-container').appendChild(div)
     }
     else{
-        alert('Wrong Amount')
+        alert('Invalid Amount')
     }
 });
 
@@ -77,16 +76,15 @@ document.getElementById('relief-btn-donation').addEventListener('click', functio
          div.classList.add('rounded-3xl')
          div.innerHTML = `
              <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
-                 <p class="text-3xl">${inputField} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
-                 <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
-             </div>
-             
+                <p class="text-3xl">${inputField} Taka is Donated for Flood Relief in Feni Bangladesh</p>
+                <p class=" p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
+            </div>  
          `
  
          document.getElementById('transaction-container').appendChild(div)
     }
     else{
-        alert('Wrong Amount')
+        alert('Invalid Amount')
     }
 });
 
@@ -115,10 +113,9 @@ document.getElementById('quota-donation-btn').addEventListener('click', function
          div.classList.add('rounded-3xl')
          div.innerHTML = `
              <div class="p-10 border-2 mt-5 rounded-2xl font-semibold w-11/12 mx-auto">
-                 <p class="lg:text-3xl text-sm">${inputField} Taka is Donated for Aid for Injured in the Quota Movement</p>
-                 <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
-             </div>
-             
+                <p class="text-3xl">${inputField} Taka is Donated for Aid for Injured in the Quota Movement</p>
+                <p class=" p-2 mt-5">${new Date().toDateString()} ${new Date().toTimeString()} </p>
+            </div>  
          `
  
          document.getElementById('transaction-container').appendChild(div)
@@ -126,6 +123,6 @@ document.getElementById('quota-donation-btn').addEventListener('click', function
         
     }
     else{
-        alert('Wrong Amount')
+        alert('Invalid Amount')
     }
 });
