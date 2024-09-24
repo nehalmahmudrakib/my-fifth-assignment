@@ -30,6 +30,10 @@ document.getElementById('btn-donate-nowakhali').addEventListener('click', functi
     if(inputField >= 0 && typeof inputField === 'number'){
         document.getElementById('donation-balance').innerText = nowakhaliDonation
         document.getElementById('account-balance').innerText = totalBalance
+
+        // Transaction History
+        const p = document.createElement('p')
+        p.innerText
     }
     else{
         alert('Wrong Amount')
