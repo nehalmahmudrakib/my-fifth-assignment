@@ -27,13 +27,23 @@ document.getElementById('btn-donate-nowakhali').addEventListener('click', functi
     const nowakhaliDonation = inputField + donationBalance
     const totalBalance = accountBalanceNumber - inputField
 
-    if(inputField >= 0 && typeof inputField === 'number'){
+    // if(inputField >= 0 && typeof inputField === 'number' && isNaN){
+    if(!isNaN(inputField) && inputField > 0 && totalBalance > inputField){
         document.getElementById('donation-balance').innerText = nowakhaliDonation
         document.getElementById('account-balance').innerText = totalBalance
 
         // Transaction History
-        const p = document.createElement('p')
-        p.innerText
+        const div = document.createElement('div')
+        div.classList.add('rounded-3xl')
+        div.innerHTML = `
+            <div class="p-10 border-2 mt-5 rounded-2xl font-semibold">
+                <p class="text-3xl">${inputField} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
+                <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
+            </div>
+            
+        `
+
+        document.getElementById('transaction-container').appendChild(div)
     }
     else{
         alert('Wrong Amount')
@@ -52,9 +62,22 @@ document.getElementById('relief-btn-donation').addEventListener('click', functio
     const ReliefDonation = inputField + donationBalance
     const totalBalance = accountBalanceNumber - inputField
 
-    if(inputField >= 0 && typeof inputField === 'number'){
+    if(!isNaN(inputField) && inputField > 0 && totalBalance > inputField){
         document.getElementById('donation-balance-2').innerText = ReliefDonation
         document.getElementById('account-balance').innerText = totalBalance
+
+         // Transaction History
+         const div = document.createElement('div')
+         div.classList.add('rounded-3xl')
+         div.innerHTML = `
+             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold">
+                 <p class="text-3xl">${inputField} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
+                 <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
+             </div>
+             
+         `
+ 
+         document.getElementById('transaction-container').appendChild(div)
     }
     else{
         alert('Wrong Amount')
@@ -74,9 +97,22 @@ document.getElementById('quota-donation-btn').addEventListener('click', function
     const quotaDonation = inputField + donationBalance
     const totalBalance = accountBalanceNumber - inputField
 
-    if(inputField >= 0 && typeof inputField === 'number'){
+    if(!isNaN(inputField) && inputField > 0 && totalBalance > inputField){
         document.getElementById('donation-balance-3').innerText = quotaDonation
         document.getElementById('account-balance').innerText = totalBalance
+
+         // Transaction History
+         const div = document.createElement('div')
+         div.classList.add('rounded-3xl')
+         div.innerHTML = `
+             <div class="p-10 border-2 mt-5 rounded-2xl font-semibold">
+                 <p class="text-3xl">${inputField} Taka is Donated for Aid for Injured in the Quota Movement</p>
+                 <p class="text-xl mt-5"> Date: ${new Date().toLocaleDateString()} </p>
+             </div>
+             
+         `
+ 
+         document.getElementById('transaction-container').appendChild(div)
     }
     else{
         alert('Wrong Amount')
